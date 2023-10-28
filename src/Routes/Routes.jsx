@@ -5,6 +5,7 @@ import Rootpage from "../Pages/Rootpage";
 import Errorpage from "../Pages/Errorpage";
 import Home from "../Pages/Home";
 import AddService from "../Pages/AddService";
+import Login from "../Pages/Login";
 
  const router = createBrowserRouter([
     {
@@ -20,6 +21,14 @@ import AddService from "../Pages/AddService";
           path: "/AddService",
           element: <AddService></AddService>,
         },
+        {
+          path: "/Login",
+          element:<Login></Login>,
+        },
+        // {
+        //   path: "/Register",
+        //   element:<Register></Register>,
+        // },
       ],
     }, 
   ]);
