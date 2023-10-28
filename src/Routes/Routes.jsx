@@ -4,6 +4,7 @@ import {
 import Rootpage from "../Pages/Rootpage";
 import Errorpage from "../Pages/Errorpage";
 import Home from "../Pages/Home";
+import AddService from "../Pages/AddService";
 
  const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ import Home from "../Pages/Home";
         {
           path: "/",
           element: <Home></Home>,
+        },
+        {
+          path: "/AddService",
+          element: <AddService></AddService>,
         },
       ],
     }, 
