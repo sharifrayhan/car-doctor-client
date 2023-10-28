@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import img from '../assets/images/login/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../Context/Context';
+import Navbar from './Navbar';
 
 
 
@@ -28,7 +29,9 @@ const Register = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div>
+<Navbar></Navbar>
+<div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="w-1/2 mr-12">
                     <img src={img} alt="" />
@@ -66,6 +69,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

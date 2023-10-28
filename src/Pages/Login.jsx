@@ -3,6 +3,7 @@ import img from '../assets/images/login/login.svg'
 
 import { AuthContext } from '../Context/Context';
 import { useContext } from 'react';
+import Navbar from './Navbar';
 
 
 const Login = () => {
@@ -24,7 +25,9 @@ const Login = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+       <div>
+<Navbar></Navbar>
+<div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="w-1/2 mr-12">
                     <img src={img} alt="" />
@@ -57,6 +60,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+       </div>
     );
 };
 
